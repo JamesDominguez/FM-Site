@@ -1,26 +1,43 @@
-<html lang=”en”>
-<head>
+<!DOCTYPE html>
+<html>
+  <head>
     <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Name of your awesome camera app -->
-    <title>Camera App</title>
-    <!-- Link to your main style sheet-->
+    <title>FM site</title>
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!-- Camera -->
-    <main id="camera">
-        <!-- Camera sensor -->
-        <canvas id="camera--sensor"></canvas>
-        <!-- Camera view -->
-        <video id="camera--view" autoplay playsinline></video>
-        <!-- Camera output -->
-        <img src="//:0" alt="" id="camera--output">
-        <!-- Camera trigger -->
-        <button id="camera--trigger">Take a picture</button>
-    </main>
-    <!-- Reference to your JavaScript file -->
-    <script src="app.js"></script>
-</body>
+  </head>
+  <body>
+
+    <h1>Image-upload with preview</h1>
+    <div class="wrapper">
+      <div class="box">
+        <div class="js--image-preview"></div>
+        <div class="upload-options"d>
+          <label>
+            <input type="file" class="image-upload" accept="image/*" />
+          </label>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="js--image-preview"></div>
+        <div class="upload-options">
+          <label>
+            <input type="file" class="image-upload" accept="image/*" />
+          </label>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="js--image-preview"></div>
+        <div class="upload-options">
+          <label>
+            <input type="file" class="image-upload" accept="image/*" />
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+
+  </body>
 </html>
